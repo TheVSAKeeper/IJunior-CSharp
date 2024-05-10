@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStrings", "WorkingWithStrings\WorkingWithStrings.csproj", "{AEF494E9-D588-4F50-BFDA-35D91362AB32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Images", "Images\Images.csproj", "{5C73AE2E-75E3-4F71-94D2-4E28A0A84E26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{AEF494E9-D588-4F50-BFDA-35D91362AB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF494E9-D588-4F50-BFDA-35D91362AB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF494E9-D588-4F50-BFDA-35D91362AB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C73AE2E-75E3-4F71-94D2-4E28A0A84E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C73AE2E-75E3-4F71-94D2-4E28A0A84E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C73AE2E-75E3-4F71-94D2-4E28A0A84E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C73AE2E-75E3-4F71-94D2-4E28A0A84E26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
