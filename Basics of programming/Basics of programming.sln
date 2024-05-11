@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Images", "Images\Images.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwappingValues", "SwappingValues\SwappingValues.csproj", "{545F18F4-18A1-41EF-97A3-22D6020E550A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalShop", "CrystalShop\CrystalShop.csproj", "{AC49E676-6A45-46AF-9A7D-F505DD07BE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{545F18F4-18A1-41EF-97A3-22D6020E550A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{545F18F4-18A1-41EF-97A3-22D6020E550A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{545F18F4-18A1-41EF-97A3-22D6020E550A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC49E676-6A45-46AF-9A7D-F505DD07BE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC49E676-6A45-46AF-9A7D-F505DD07BE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC49E676-6A45-46AF-9A7D-F505DD07BE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC49E676-6A45-46AF-9A7D-F505DD07BE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
