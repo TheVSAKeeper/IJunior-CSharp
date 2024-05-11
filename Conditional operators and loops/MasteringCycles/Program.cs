@@ -9,7 +9,7 @@ internal static class Program
         Console.Write($"Введите число повторений (по умолчанию {defaultRepeatCount}): ");
         string? requiredRepeat = Console.ReadLine();
 
-        if (string.IsNullOrWhiteSpace(requiredRepeat) || int.TryParse(requiredRepeat, out int repeatCount))
+        if (string.IsNullOrWhiteSpace(requiredRepeat) || int.TryParse(requiredRepeat, out int repeatCount) == false)
             repeatCount = defaultRepeatCount;
 
         Console.Write("Введите сообщение для повторения: ");
