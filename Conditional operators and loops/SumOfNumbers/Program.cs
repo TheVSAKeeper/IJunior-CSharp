@@ -5,7 +5,7 @@ internal static class Program
     private static void Main()
     {
         Random random = new();
-        
+
         int maxNumber = 99;
         int number = random.Next(maxNumber + 1);
 
