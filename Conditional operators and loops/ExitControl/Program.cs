@@ -11,7 +11,7 @@ internal static class Program
         do
         {
             Console.WriteLine("Введите {0} для выхода из программы.", ExitCommand);
-            inputMessage = Console.ReadLine();
+            inputMessage = Console.ReadLine()?.ToLower();
         } while (inputMessage != ExitCommand);
     }
 }
