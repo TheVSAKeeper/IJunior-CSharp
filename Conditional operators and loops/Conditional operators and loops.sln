@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasteringCycles", "MasteringCycles\MasteringCycles.csproj", "{5FEFA3C0-9BFF-4091-AF67-D6BA0CC0717A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExitControl", "ExitControl\ExitControl.csproj", "{9786FA47-31B0-4A08-90AB-D14317147886}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5FEFA3C0-9BFF-4091-AF67-D6BA0CC0717A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FEFA3C0-9BFF-4091-AF67-D6BA0CC0717A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FEFA3C0-9BFF-4091-AF67-D6BA0CC0717A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9786FA47-31B0-4A08-90AB-D14317147886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9786FA47-31B0-4A08-90AB-D14317147886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9786FA47-31B0-4A08-90AB-D14317147886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9786FA47-31B0-4A08-90AB-D14317147886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
