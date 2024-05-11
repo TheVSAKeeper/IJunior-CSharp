@@ -8,7 +8,7 @@ internal static class Program
         int minutesPerHour = 60;
 
         Console.Write("Введите количество человек перед вами: ");
-        int peopleInQueue = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out int peopleInQueue);
 
         int totalWaitingTimeInMinutes = peopleInQueue * receptionTimeInMinutes;
         int waitingHours = totalWaitingTimeInMinutes / minutesPerHour;
