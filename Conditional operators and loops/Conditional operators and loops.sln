@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameOutput", "NameOutput\Na
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordProtectedProgram", "PasswordProtectedProgram\PasswordProtectedProgram.csproj", "{EFF32931-7A58-4A10-8FC3-34C1C4010E69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplesNumbers", "MultiplesNumbers\MultiplesNumbers.csproj", "{3F94072E-26C2-41E2-BCBC-62EF5472D3AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F94072E-26C2-41E2-BCBC-62EF5472D3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F94072E-26C2-41E2-BCBC-62EF5472D3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F94072E-26C2-41E2-BCBC-62EF5472D3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F94072E-26C2-41E2-BCBC-62EF5472D3AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
