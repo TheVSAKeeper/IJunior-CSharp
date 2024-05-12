@@ -1,4 +1,6 @@
-﻿namespace CurrencyConverter;
+﻿using System;
+
+namespace CurrencyConverter;
 
 internal static class Program
 {
