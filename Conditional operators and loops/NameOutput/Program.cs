@@ -1,4 +1,6 @@
-﻿namespace NameOutput;
+﻿using System;
+
+namespace NameOutput;
 
 internal static class Program
 {

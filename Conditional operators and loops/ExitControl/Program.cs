@@ -1,4 +1,6 @@
-﻿namespace ExitControl;
+﻿using System;
+
+namespace ExitControl;
 
 internal static class Program
 {

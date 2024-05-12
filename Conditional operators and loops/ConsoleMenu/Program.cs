@@ -1,4 +1,6 @@
-﻿namespace ConsoleMenu;
+﻿using System;
+
+namespace ConsoleMenu;
 
 internal static class Program
 {

@@ -1,4 +1,6 @@
-﻿namespace MasteringCycles;
+﻿using System;
+
+namespace MasteringCycles;
 
 internal static class Program
 {

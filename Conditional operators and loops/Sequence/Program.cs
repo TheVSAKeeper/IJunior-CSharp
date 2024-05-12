@@ -1,4 +1,6 @@
-﻿namespace Sequence;
+﻿using System;
+
+namespace Sequence;
 
 internal static class Program
 {

@@ -12,7 +12,7 @@ internal static class Program
         const string UsdToEurCommand = "usd-eur";
         const string EurToRubCommand = "eur-rub";
         const string EurToUsdCommand = "eur-usd";
-        
+
         const string Rubles = "RUB";
         const string Dollars = "USD";
         const string Euro = "EUR";
@@ -25,6 +25,7 @@ internal static class Program
         const string BalanceMessage = $"\nРублей ({Rubles}): {{0}}\n"
                                       + $"Долларов ({Dollars}): {{1}}\n"
                                       + $"Евро ({Euro}): {{2}}\n\n";
+
         double usdToRubRate = 98.0;
         double eurToRubRate = 102.0;
         double usdToEurRate = 1.1;
