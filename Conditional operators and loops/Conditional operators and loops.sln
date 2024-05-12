@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "Curren
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameOutput", "NameOutput\NameOutput.csproj", "{E8429230-78C2-42CF-9652-113339375837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordProtectedProgram", "PasswordProtectedProgram\PasswordProtectedProgram.csproj", "{EFF32931-7A58-4A10-8FC3-34C1C4010E69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{E8429230-78C2-42CF-9652-113339375837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8429230-78C2-42CF-9652-113339375837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8429230-78C2-42CF-9652-113339375837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF32931-7A58-4A10-8FC3-34C1C4010E69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
