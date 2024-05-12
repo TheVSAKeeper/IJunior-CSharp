@@ -17,7 +17,7 @@ internal static class Program
 
         if (string.IsNullOrWhiteSpace(requiredBorderSymbol) || char.TryParse(requiredBorderSymbol.Trim(), out char borderSymbol) == false)
             borderSymbol = defaultBorderSymbol;
-        
+
         string nameLine = $"{borderSymbol}{name}{borderSymbol}";
         string frame = new(borderSymbol, nameLine.Length);
 
