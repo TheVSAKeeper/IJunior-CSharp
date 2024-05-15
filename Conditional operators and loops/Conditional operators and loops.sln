@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplesNumbers", "Multipl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DegreeOfTwo", "DegreeOfTwo\DegreeOfTwo.csproj", "{7A4E1C45-A1BE-485F-B13E-1B6F1B3C8C8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossFight", "BossFight\BossFight.csproj", "{BCFC915E-F8F5-4E6E-A0E0-E094231418BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{7A4E1C45-A1BE-485F-B13E-1B6F1B3C8C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A4E1C45-A1BE-485F-B13E-1B6F1B3C8C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A4E1C45-A1BE-485F-B13E-1B6F1B3C8C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFC915E-F8F5-4E6E-A0E0-E094231418BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFC915E-F8F5-4E6E-A0E0-E094231418BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFC915E-F8F5-4E6E-A0E0-E094231418BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFC915E-F8F5-4E6E-A0E0-E094231418BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
