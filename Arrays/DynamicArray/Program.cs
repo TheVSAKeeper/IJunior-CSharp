@@ -18,7 +18,7 @@ internal static class Program
             Console.Clear();
 
             string numbersContents = string.Join(" ", numbers);
-            Console.WriteLine($"Содержимое массива ({numbers.Length} чисел: {numbersContents}");
+            Console.WriteLine($"Содержимое массива ({numbers.Length} чисел): {numbersContents}");
 
             Console.Write($"Введите число, которое нужно добавить в массив, или команду {CommandSum} или {CommandExit}: ");
             string enteredCommand = Console.ReadLine() ?? string.Empty;
