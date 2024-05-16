@@ -20,30 +20,18 @@ internal static class Program
         string numbersContents = string.Join(" ", numbers);
         Console.WriteLine($"Массив: {numbersContents}");
 
-        int repeatingNumber = numbers[0];
         int repetitionsCount = 1;
-
-        int maxRepeatingNumber = repeatingNumber;
+        int maxRepeatingNumber = numbers.Length == 1 ? numbers[0] : 0;
         int maxRepetitionsCount = repetitionsCount;
 
         for (int i = 1; i < numbers.Length; i++)
         {
-            int number = numbers[i];
+            repetitionsCount = numbers[i] == numbers[i - 1] ? repetitionsCount + 1 : 1;
 
-            if (repeatingNumber == number)
+            if (repetitionsCount > maxRepetitionsCount)
             {
-                repetitionsCount++;
-
-                if (repetitionsCount > maxRepetitionsCount)
-                {
-                    maxRepetitionsCount = repetitionsCount;
-                    maxRepeatingNumber = repeatingNumber;
-                }
-            }
-            else
-            {
-                repeatingNumber = number;
-                repetitionsCount = 1;
+                maxRepetitionsCount = repetitionsCount;
+                maxRepeatingNumber = numbers[i];
             }
         }
 
