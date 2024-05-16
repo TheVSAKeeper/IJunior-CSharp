@@ -14,14 +14,19 @@ internal static class Program
         int size = 30;
         int[] numbers = new int[size];
 
+        Console.Write("Массив: ");
+
         for (int i = 0; i < numbers.Length; i++)
+        {
             numbers[i] = random.Next(minValue, maxValue + 1);
 
-        string numbersContents = string.Join(" ", numbers);
-        Console.WriteLine($"Массив: {numbersContents}");
+            Console.Write($"{numbers[i]} ");
+        }
 
+        int defaultValue = 0;
+        int maxRepeatingNumber = numbers.Length == 1 ? numbers[0] : defaultValue;
+        
         int repetitionsCount = 1;
-        int maxRepeatingNumber = numbers.Length == 1 ? numbers[0] : 0;
         int maxRepetitionsCount = repetitionsCount;
 
         for (int i = 1; i < numbers.Length; i++)
