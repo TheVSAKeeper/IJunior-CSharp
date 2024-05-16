@@ -17,32 +17,37 @@ internal static class Program
         int firstElementIndex = 0;
         int lastElementIndex = numbers.Length - 1;
 
+        string format = new('0', maxValue.ToString().Length);
+
         for (int i = 0; i < numbers.Length; i++)
         {
             numbers[i] = random.Next(minValue, maxValue + 1);
         }
 
-        Console.Write($"{size} чисел: ");
+        Console.WriteLine($"{size} чисел: ");
 
         foreach (int number in numbers)
         {
-            Console.Write($"{number} ");
+            Console.Write($"{number.ToString(format)} ");
         }
 
-        Console.Write("Локальные максимумы: ");
+        Console.WriteLine("\nЛокальные максимумы: ");
 
-        if (numbers[firstElementIndex] > numbers[firstElementIndex + 1])
-            Console.Write($"{numbers[firstElementIndex]} ");
+        char replacerCharacter = '-';
+        string numberReplacer = new(replacerCharacter, format.Length);
+
+        bool isLocalMaxima = numbers[firstElementIndex] > numbers[firstElementIndex + 1];
+        Console.Write($"{(isLocalMaxima ? numbers[firstElementIndex].ToString(format) : numberReplacer)} ");
 
         for (int i = 1; i < lastElementIndex; i++)
         {
-            if (numbers[i] > numbers[i + 1] && numbers[i] > numbers[i - 1])
-                Console.Write($"{numbers[i]} ");
+            isLocalMaxima = numbers[i] > numbers[i + 1] && numbers[i] > numbers[i - 1];
+            Console.Write($"{(isLocalMaxima ? numbers[i].ToString(format) : numberReplacer)} ");
         }
 
-        if (numbers[lastElementIndex] > numbers[lastElementIndex - 1])
-            Console.Write($"{numbers[lastElementIndex]} ");
+        isLocalMaxima = numbers[lastElementIndex] > numbers[lastElementIndex - 1];
+        Console.Write($"{(isLocalMaxima ? numbers[lastElementIndex].ToString(format) : numberReplacer)} ");
 
-        Console.ReadLine();
+        Console.ReadKey();
     }
 }
