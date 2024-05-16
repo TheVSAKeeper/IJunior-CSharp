@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestElement", "Greatest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalMaxima", "LocalMaxima\LocalMaxima.csproj", "{8B9B68E8-E6A8-4AC7-B074-94B2FA9F245B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DynamicArray\DynamicArray.csproj", "{5D3F3DB9-9DB4-419B-BC76-0A6E24781437}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8B9B68E8-E6A8-4AC7-B074-94B2FA9F245B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B9B68E8-E6A8-4AC7-B074-94B2FA9F245B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B9B68E8-E6A8-4AC7-B074-94B2FA9F245B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3F3DB9-9DB4-419B-BC76-0A6E24781437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3F3DB9-9DB4-419B-BC76-0A6E24781437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3F3DB9-9DB4-419B-BC76-0A6E24781437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3F3DB9-9DB4-419B-BC76-0A6E24781437}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
