@@ -37,16 +37,19 @@ internal static class Program
         string numberReplacer = new(replacerCharacter, format.Length);
 
         bool isLocalMaxima = numbers[firstElementIndex] > numbers[firstElementIndex + 1];
-        Console.Write($"{(isLocalMaxima ? numbers[firstElementIndex].ToString(format) : numberReplacer)} ");
+        string localMaxima = isLocalMaxima ? numbers[firstElementIndex].ToString(format) : numberReplacer;
+        Console.Write($"{localMaxima} ");
 
         for (int i = 1; i < lastElementIndex; i++)
         {
             isLocalMaxima = numbers[i] > numbers[i + 1] && numbers[i] > numbers[i - 1];
-            Console.Write($"{(isLocalMaxima ? numbers[i].ToString(format) : numberReplacer)} ");
+            localMaxima = isLocalMaxima ? numbers[i].ToString(format) : numberReplacer;
+            Console.Write($"{localMaxima} ");
         }
 
         isLocalMaxima = numbers[lastElementIndex] > numbers[lastElementIndex - 1];
-        Console.Write($"{(isLocalMaxima ? numbers[lastElementIndex].ToString(format) : numberReplacer)} ");
+        localMaxima = isLocalMaxima ? numbers[lastElementIndex].ToString(format) : numberReplacer;
+        Console.Write($"{localMaxima} ");
 
         Console.ReadKey();
     }
