@@ -9,38 +9,29 @@ internal static class Program
         const char IncreaseNestingCommand = '(';
         const char DecreaseNestingCommand = ')';
 
-        string testExpression = "(()((()))";
+        string testExpression = "(())((()))";
 
         int nestingDepth = 0;
         int maxNestingDepth = 0;
         bool isCorrectBracketsExpression = true;
 
-        for (int i = 0; i < testExpression.Length && isCorrectBracketsExpression; i++)
+        foreach (char symbol in testExpression)
         {
-            char symbol = testExpression[i];
-
-            switch (symbol)
+            if (symbol == IncreaseNestingCommand)
             {
-                case IncreaseNestingCommand:
+                nestingDepth++;
+
+                if (nestingDepth > maxNestingDepth)
+                    maxNestingDepth = nestingDepth;
+            }
+            else if (symbol == DecreaseNestingCommand)
+            {
+                nestingDepth--;
+
+                if (nestingDepth < 0)
                 {
-                    nestingDepth++;
-
-                    if (nestingDepth > maxNestingDepth)
-                        maxNestingDepth = nestingDepth;
-
-                    break;
-                }
-
-                case DecreaseNestingCommand:
-                {
-                    nestingDepth--;
-
-                    if (nestingDepth < 0)
-                    {
-                        isCorrectBracketsExpression = false;
-                        Console.WriteLine("Открывающаяся скобка отсутствует.");
-                    }
-
+                    isCorrectBracketsExpression = false;
+                    Console.WriteLine("Открывающаяся скобка отсутствует.");
                     break;
                 }
             }
