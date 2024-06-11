@@ -38,13 +38,7 @@ internal static class Program
         Console.Write(barPart);
     }
 
-    private static void SetCursorPosition(int left, int top)
-    {
-        Console.SetCursorPosition(left, top);
-    }
+    private static void SetCursorPosition(int left, int top) => Console.SetCursorPosition(left, top);
 
-    private static void ResetCursorPosition()
-    {
-        Console.SetCursorPosition(0, 0);
-    }
+    private static void ResetCursorPosition() => Console.SetCursorPosition(0, 0);
 }
