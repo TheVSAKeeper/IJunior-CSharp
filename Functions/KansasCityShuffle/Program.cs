@@ -7,37 +7,39 @@ internal static class Program
 {
     private static void Main()
     {
-        TestIntArray();
-        TestStringArray();
+        RunShuffleTestingIntArray();
+        RunShuffleTestingStringArray();
     }
 
-    private static void TestIntArray()
+    private static void RunShuffleTestingIntArray()
     {
-        int[] array = CreateArray(0);
-        TestArray(array);
+        int start = 0;
+        int[] array = CreateArray(start);
+        RunArrayTesting(array);
     }
 
-    private static void TestStringArray()
+    private static void RunShuffleTestingStringArray()
     {
-        string[] array = CreateArray("test");
-        TestArray(array);
+        string repeatingElement = "test";
+        string[] array = CreateArray(repeatingElement);
+        RunArrayTesting(array);
     }
 
-    private static void TestArray<T>(T[] array)
+    private static void RunArrayTesting<T>(T[] array)
     {
         PrintArray(array);
         Shuffle(array);
         PrintArray(array);
     }
 
-    private static int[] CreateArray(int start, int count = 10) => Enumerable
-        .Range(start, count)
-        .ToArray();
+    private static int[] CreateArray(int start, int count = 10) =>
+        Enumerable.Range(start, count)
+            .ToArray();
 
-    private static string[] CreateArray(string repeatingElement, int count = 10) => Enumerable
-        .Repeat(repeatingElement, count)
-        .Select((element, i) => $"{element} {i}")
-        .ToArray();
+    private static string[] CreateArray(string repeatingElement, int count = 10) =>
+        Enumerable.Repeat(repeatingElement, count)
+            .Select((element, index) => $"{element} {index}")
+            .ToArray();
 
     private static void Shuffle<T>(T[] array)
     {
@@ -46,13 +48,8 @@ internal static class Program
         for (int i = 0; i < array.Length - 1; i++)
         {
             int j = random.Next(i + 1, array.Length);
-            Swap(ref array[i], ref array[j]);
+            (array[i], array[j]) = (array[j], array[i]);
         }
-    }
-
-    private static void Swap<T>(ref T firstElement, ref T secondElement)
-    {
-        (firstElement, secondElement) = (secondElement, firstElement);
     }
 
     private static void PrintArray<T>(T[] array)
