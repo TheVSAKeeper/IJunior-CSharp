@@ -123,8 +123,8 @@ internal static class Program
             return;
         }
 
-        RemoveAt(ref fullNames, removedIndex);
-        RemoveAt(ref positions, removedIndex);
+        fullNames = RemoveAt(fullNames, removedIndex);
+        positions = RemoveAt(positions, removedIndex);
 
         ShowMessage($"Удаление сотрудника #{removedIndex + 1} прошло успешно.", MessageType.Successful);
     }
@@ -202,11 +202,11 @@ internal static class Program
         return number;
     }
 
-    private static void RemoveAt(ref string[] array, int index)
+    private static string[] RemoveAt(string[] array, int index)
     {
         if (index < 0 || index >= array.Length)
         {
-            return;
+            return array;
         }
 
         string[] newArray = new string[array.Length - 1];
@@ -221,14 +221,14 @@ internal static class Program
             newArray[i] = array[i + 1];
         }
 
-        array = newArray;
+        return newArray;
     }
 
     private static IEnumerable<int> FindAllIndexesOf(string[] fullNames, string surname)
     {
         for (int i = 0; i < fullNames.Length; i++)
         {
-            string[] employeeData = fullNames[i].Split([" "], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            string[] employeeData = Split(fullNames[i], " ");
 
             if (string.Equals(employeeData[0], surname, StringComparison.InvariantCultureIgnoreCase))
             {
@@ -239,7 +239,7 @@ internal static class Program
 
     private static bool TryAddEmployee(ref string[] fullNames, ref string[] positions, string employee)
     {
-        string[] employeeData = employee.Split(["-"], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        string[] employeeData = Split(employee, "-");
 
         if (employeeData.Length != 2)
         {
@@ -254,6 +254,9 @@ internal static class Program
 
         return true;
     }
+
+    private static string[] Split(string line, params string[] separators) => 
+        line.Split(separators, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
     private static string[] AddElement(string[] array, string element)
     {
